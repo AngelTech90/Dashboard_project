@@ -15,7 +15,7 @@
         <!-- Font of app -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-        <!-- main js file: -->
+        <!-- main js file<span class = "statSpan"> </span> -->
         <script defer src="src/JS/main.js"></script>
         
         <!-- Main styles -->
@@ -29,55 +29,55 @@
         <title>Dashboard</title>
 
     </head>
-<body>
+<body class = "bg-black">
 
 <div class="container">
-    <div class="header">User Dashboard</div>
+    <div class="header text-[3rem] text-[#ff185d]">User Dashboard</div>
 
     <div class="grid">
         <!-- Free Users -->
         <div class="card">
-            <h2>Free Users</h2>
+            <h2 class = "text-center w-[100%] h-fit">Free Users</h2>
             <div class="stats">
-                <p>Users Today: 306</p>
-                <p>Users Last 7 Days: 2746</p>
-                <p>Users Last 30 Days: 15073</p>
-                <p>Users Last 6 Months: 46846</p>
-                <p>Users Last 1 Year: 46877</p>
-                <p>Total Users: 46877</p>
+                <p class = "stat">Users Today: <span class = "statSpan"> 306</span></p>
+                <p class = "stat">Users Last 7 Days: <span class = "statSpan"> 2746</span> </p>
+                <p class = "stat">Users Last 30 Days:<span class = "statSpan"> 15073</span> </p>
+                <p class = "stat">Users Last 6 Months: <span class = "statSpan"> 46846</span> </p>
+                <p class = "stat">Users Last 1 Year: <span class = "statSpan"> 46877</span> </p>
+                <p class = "stat">Total Users: <span class = "statSpan"> 46877</span> </p>
             </div>
         </div>
 
         <!-- Paid Users -->
         <div class="card">
-            <h2>Paid Users</h2>
+            <h2 class = "text-center w-[100%] h-fit">Paid Users</h2>
             <div class="stats">
-                <p>Users Today: 2</p>
-                <p>Users Last 7 Days: 29</p>
-                <p>Users Last 30 Days: 121</p>
-                <p>Users Last 6 Months: 291</p>
-                <p>Users Last 1 Year: 291</p>
-                <p>Total Users: 291</p>
+                <p class = "stat">Users Today<span class = "statSpan"> 20</span> </p>
+                <p class = "stat">Users Last 7 Days:<span class = "statSpan"> 29</span> </p>
+                <p class = "stat">Users Last 30 Days:<span class = "statSpan"> 121</span> </p>
+                <p class = "stat">Users Last 6 Months: <span class = "statSpan"> 291</span> </p>
+                <p class = "stat">Users Last 1 Year: <span class = "statSpan"> 291</span> </p>
+                <p class = "stat">Total Users: <span class = "statSpan"> 291</span> </p>
             </div>
         </div>
     </div>
 
     <!-- Visitors Chart -->
     <div class="card footer">
-        <h2>Visitors</h2>
-        <div class="chart-container">
+        <h2 class = "text-center w-[100%] h-fit">Visitors</h2>
+        <div class="chart-container flex justify-center items-center">
             <canvas id="visitorsChart"></canvas>
         </div>
     </div>
 
     <!-- Total Messages & Costs -->
     <div class="card footer">
-        <h2>Total Messages & Costs</h2>
-        <div class="stats">
-            <p>Total Messages: 487377</p>
-            <p>Average Inputs Per User: 12.46</p>
-            <p>Unique Users that Chatted: 39112</p>
-            <p>Monthly Costs: $159.25</p>
+        <h2 id = "finalCard" class = "text-center w-[100%] h-fit">Total Messages & Costs</h2>
+        <div class="text-[14px] mt-[5%] flex flex-col items-center justify-center">
+            <p class = "statFinal">Total Messages: <span class = "statSpan"> 487377</span> </p>
+            <p class = "statFinal">Average Inputs Per User: <span class = "statSpan"> 12.46</span> </p>
+            <p class = "statFinal">Unique Users that Chatted: <span class = "statSpan"> 39112</span> </p>
+            <p class = "statFinal">Monthly Costs: <span class = "statSpanCost"> $159.25</span> </p>
         </div>
     </div>
 </div>

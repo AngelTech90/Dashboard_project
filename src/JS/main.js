@@ -16,10 +16,10 @@ var visitorsChart = new Chart(ctx, {
         datasets: [{
 
             //*Here we set the style information of the chart, like border width, border color and 
-            label: `Visitors ${currentVisitors}`,
-            borderColor: 'rgba(75, 192, 192, 1)',
+            borderColor: '#0b9412',
             fill: true,
             borderWidth: 2,
+            backgroundColor:'rgb(21, 221, 14,0.3)',
 
             //Here we set the label for the data type, in this case the amount of visitors separated for every month:
             data: [20000, 40000, 80000, 120000, 160000, 160000],
@@ -37,4 +37,12 @@ var visitorsChart = new Chart(ctx, {
         }
     }
 });
+
+//Here we abstract and show our current amount of visitors:
+visitorsChart.data.datasets[0].label = `Current visitors: ${
+
+    visitorsChart.data.datasets[0].data[visitorsChart.data.datasets[0].data.length-1]
+
+}`
+
 

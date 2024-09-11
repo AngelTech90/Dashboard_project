@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Dashboard</title>
+
+        <!-- Chart JS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!-- Font of app -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- main js file: -->
+        <script defer src="src/JS/main.js"></script>
+        
+        <!-- Main styles -->
+        <link rel="stylesheet" href="src/CSS/main.css">
+        
+
+        <link rel="stylesheet" href="src/tailwind/output.css">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+
+    </head>
+<body>
+
+<div class="container">
+    <div class="header">User Dashboard</div>
+
+    <div class="grid">
+        <!-- Free Users -->
+        <div class="card">
+            <h2>Free Users</h2>
+            <div class="stats">
+                <p>Users Today: 306</p>
+                <p>Users Last 7 Days: 2746</p>
+                <p>Users Last 30 Days: 15073</p>
+                <p>Users Last 6 Months: 46846</p>
+                <p>Users Last 1 Year: 46877</p>
+                <p>Total Users: 46877</p>
+            </div>
+        </div>
+
+        <!-- Paid Users -->
+        <div class="card">
+            <h2>Paid Users</h2>
+            <div class="stats">
+                <p>Users Today: 2</p>
+                <p>Users Last 7 Days: 29</p>
+                <p>Users Last 30 Days: 121</p>
+                <p>Users Last 6 Months: 291</p>
+                <p>Users Last 1 Year: 291</p>
+                <p>Total Users: 291</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visitors Chart -->
+    <div class="card footer">
+        <h2>Visitors</h2>
+        <div class="chart-container">
+            <canvas id="visitorsChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Total Messages & Costs -->
+    <div class="card footer">
+        <h2>Total Messages & Costs</h2>
+        <div class="stats">
+            <p>Total Messages: 487377</p>
+            <p>Average Inputs Per User: 12.46</p>
+            <p>Unique Users that Chatted: 39112</p>
+            <p>Monthly Costs: $159.25</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -39,12 +39,10 @@
         <div class="card">
             <h2 class = "text-center w-[100%] h-fit">Free Users</h2>
             <div class="stats">
-                <p class = "stat">Users Today: <span class = "statSpan"> 306</span></p>
-                <p class = "stat">Users Last 7 Days: <span class = "statSpan"> 2746</span> </p>
-                <p class = "stat">Users Last 30 Days:<span class = "statSpan"> 15073</span> </p>
-                <p class = "stat">Users Last 6 Months: <span class = "statSpan"> 46846</span> </p>
-                <p class = "stat">Users Last 1 Year: <span class = "statSpan"> 46877</span> </p>
-                <p class = "stat">Total Users: <span class = "statSpan"> 46877</span> </p>
+                <!-- Pie chart container -->
+                <div class="chart-container2">
+                    <canvas id="freeUsersPieChart"></canvas>
+                </div>
             </div>
         </div>
 
@@ -52,12 +50,10 @@
         <div class="card">
             <h2 class = "text-center w-[100%] h-fit">Paid Users</h2>
             <div class="stats">
-                <p class = "stat">Users Today<span class = "statSpan"> 20</span> </p>
-                <p class = "stat">Users Last 7 Days:<span class = "statSpan"> 29</span> </p>
-                <p class = "stat">Users Last 30 Days:<span class = "statSpan"> 121</span> </p>
-                <p class = "stat">Users Last 6 Months: <span class = "statSpan"> 291</span> </p>
-                <p class = "stat">Users Last 1 Year: <span class = "statSpan"> 291</span> </p>
-                <p class = "stat">Total Users: <span class = "statSpan"> 291</span> </p>
+                <!-- Stacked Bar and Line Chart container -->
+            <div class="chart-container2">
+                <canvas id="paidUsersStackedChart"></canvas>
+            </div>
             </div>
         </div>
     </div>
@@ -71,13 +67,14 @@
     </div>
 
     <!-- Total Messages & Costs -->
-    <div class="card footer">
+    <div class="card footer p-[3%]">
         <h2 id = "finalCard" class = "text-center w-[100%] h-fit">Total Messages & Costs</h2>
-        <div class="text-[14px] mt-[5%] flex flex-col items-center justify-center">
-            <p class = "statFinal">Total Messages: <span class = "statSpan"> 487377</span> </p>
-            <p class = "statFinal">Average Inputs Per User: <span class = "statSpan"> 12.46</span> </p>
-            <p class = "statFinal">Unique Users that Chatted: <span class = "statSpan"> 39112</span> </p>
-            <p class = "statFinal">Monthly Costs: <span class = "statSpanCost"> $159.25</span> </p>
+        <div class="text-[14px] mt-[2%] flex flex-col items-center justify-center">
+            <!-- Bar Chart container -->
+            <div class="chart-container flex justify-center items-center">
+                <canvas id="totalMessagesBarChart"></canvas>
+            </div>
+            <p class = "statFinal mt-[1%]">Monthly Costs: <span class = "statSpanCost"> $159.25</span> </p>
         </div>
     </div>
 </div>
